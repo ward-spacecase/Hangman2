@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:background="#ffffcb1d"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv"
+        android:src="@drawable/hangman"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/credits_button"
+        android:layout_alignStart="@+id/credits_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hangman"
+        android:id="@+id/hangmanText"
+        android:textColor="#ffff882e"
+        android:textStyle="bold"
+        android:textSize="100px"
+        android:layout_marginTop="126dp"
+        android:textColorHint="#fffffa2c"
+        android:layout_alignTop="@+id/iv"
+        android:layout_alignRight="@+id/iv"
+        android:layout_alignEnd="@+id/iv"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/play_button"
+        android:clickable="true"
+        android:background="#ff62a6ff"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:onClick="onStartButtonTouch"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/settings__button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ff62a6ff"
+        android:minWidth="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits"
+        android:clickable="true"
+        android:id="@+id/credits_button"
+        android:background="#ff62a6ff"
+        android:minWidth="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="GetPopupWindow"/>
+
+
+</RelativeLayout>
+
